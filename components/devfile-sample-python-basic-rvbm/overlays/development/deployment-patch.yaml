@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-rvbm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-uwwg-tenant/test-app-vtvv/devfile-sample-python-basic-rvbm@sha256:b5bc47046d5ebe7f6bc88642e9c60b373ca91af6bb777cb6a07a4e3d42e86abe
+        name: my-python
+        resources: {}
+status: {}
